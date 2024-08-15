@@ -4,6 +4,14 @@ body {
     animation: backgroundChange 10s infinite;
 }
 
+/*Ponemos el menu fijo en la parte superior */
+#menu{
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 @keyframes backgroundChange {
     0% { background-color: #FF5733; }
     25% { background-color: #33FF57; }
@@ -77,25 +85,6 @@ body {
     height: 24px;
 }
 
-@media (max-width: 768px) {
-    
-body{
-    margin: 50px;
-}
-.nav {
-    background-color:#add8e6 ;
-    color: white;
-    
-}
-
-    .social-icons, .nav-list {
-        display: none;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-}
 
 /*inicia css perfil*/
 
@@ -187,15 +176,15 @@ b {
     justify-content: center;
     align-items: flex-start;
    /* border: 5px solid blue;*/
-    width: 30%;
-    height: 75%;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
 }
 
-.img_picture {
+/* .img_picture {
     max-width: 100%;
     height: auto;
-}
+} */
 
 .btn {
     border: 0;
@@ -263,19 +252,20 @@ b {
    
     }   
     
-    .imagen_photo {   
+    .imagen_photo { 
+    align-items: center;  
     background-image: url(./asset/foto_perfil.png);
     background-size: cover;
     background-position: 0%;
     background-repeat: no-repeat;    
-    width: 40%;
-    height: 40%;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     }
    
-    .imagen_photo {
+    /* .imagen_photo {
     align-items: center;
-    }
+    } */
     .title{
         display: none;
     }
@@ -332,7 +322,6 @@ b {
         align-items: center;
         justify-content: space-around;
         gap: 20px;
-        /*border: 12px solid blue;*/
         padding: 2%;
         width: 50%;
         
@@ -345,10 +334,11 @@ b {
 
     .imagen_photo {
         align-items: center;
-        width: 25%;
-        height: 20%;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
     }
+
 
     .btn {
         width: 100%;
@@ -377,6 +367,8 @@ b {
 
     .imagen_photo {
         align-items: center;
+        width: 20px;
+        height: 20px;
     }
 
     .btn {
